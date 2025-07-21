@@ -1,0 +1,40 @@
+{
+  "name": "qa_automation_test_challenge_hernan_munera",
+  "version": "1.0.0",
+  "description": "Automation Challenge Framework",
+  "main": "index.js",
+  "scripts": {
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "triggerAllTests-chrome": "npx cypress run --browser chrome",
+    "triggerAllTests-dashboard": "npx cypress run --record --key ed777924-3876-425c-9fff-bbfecc79c172",
+    "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/* || true",
+    "mochawesome-merge":"npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "cypress-execution-test": "npm run delete-results ; npm run delete-mochawesome-report ; npm run triggerAllTests-headless ; npm run mochawesome-merge"
+  },
+  "author": "Hernan Munera",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^14.5.1",
+    "cypress-multi-reporters": "^2.0.5",
+    "cypress-xpath": "^2.0.1",
+    "events": "^3.3.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "junit-merge": "^2.0.0"
+  }
+}
