@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-21T23:15:34.093Z",
+    "end": "2025-07-21T23:15:50.389Z",
+    "duration": 16296,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4cbcc536-1b76-420c-bbaa-ac61e6f6aaee",
+      "title": "",
+      "fullFile": "cypress/e2e/login_suite/LogIn.js",
+      "file": "cypress/e2e/login_suite/LogIn.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+          "title": "test the Login Page for Laboratorio0del testing page ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login successfully",
+              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login successfully",
+              "timedOut": null,
+              "duration": 4073,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('[href=\"/my-account\"]').should('have.text', 'Mi Cuenta')",
+              "err": {},
+              "uuid": "c18d877b-ae0f-4988-9b82-f1bfcde5b3ff",
+              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login unsuccessfully with wrong email",
+              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong email",
+              "timedOut": null,
+              "duration": 1999,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"email\"]').type('whuge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
+              "err": {},
+              "uuid": "620eb38c-31ea-4e4f-a4f3-8a46b78a1cb7",
+              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login unsuccessfully with wrong password",
+              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong password",
+              "timedOut": null,
+              "duration": 2109,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\n        cy.get('input[name=\"password\"]').type('Monday12.1');\n        cy.get('[data-at=\"submit-login\"]').click();\n        cy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
+              "err": {},
+              "uuid": "ab9c6260-3321-482b-a10c-442dfa4e4b42",
+              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login unsuccessfully by bug with unable button",
+              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully by bug with unable button",
+              "timedOut": null,
+              "duration": 6375,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('input[name=\"email\"]').clear().type('whuge2.test@gmail.com');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('[href=\"/my-account\"]').should('have.text', 'Mi Cuenta')",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.isNotDisabled (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:148344:58)\n    at runAllChecks (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114722:26)\n    at retryActionability (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114811:16)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147205:68)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147146:14)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Object.proxyGetter [as get] (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:80297:22)\n    at exists (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146387:26)\n    at elExists (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146402:10)\n    at ensureExistence (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146583:22)\n    at onFailFn (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146612:53)",
+                "diff": null
+              },
+              "uuid": "24ad5097-2b1e-4d38-889a-3a4aa89492e2",
+              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c18d877b-ae0f-4988-9b82-f1bfcde5b3ff",
+            "620eb38c-31ea-4e4f-a4f3-8a46b78a1cb7",
+            "ab9c6260-3321-482b-a10c-442dfa4e4b42"
+          ],
+          "failures": [
+            "24ad5097-2b1e-4d38-889a-3a4aa89492e2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14556,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

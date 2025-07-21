@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-21T23:15:16.734Z",
+    "end": "2025-07-21T23:15:32.181Z",
+    "duration": 15447,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9ecdbd8-7e30-463d-9ba2-9dc7ce691df4",
+      "title": "",
+      "fullFile": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
+      "file": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
+          "title": "test the E2E test for the checkout process ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adding Product to the Shopping car",
+              "fullTitle": "test the E2E test for the checkout process  Adding Product to the Shopping car",
+              "timedOut": null,
+              "duration": 4612,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout_proces.addingfProductToShoppingCar();",
+              "err": {},
+              "uuid": "a7755213-0960-43e6-8ed6-d338664d512c",
+              "parentUUID": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout process after adding itme to the shopping car",
+              "fullTitle": "test the E2E test for the checkout process  Checkout process after adding itme to the shopping car",
+              "timedOut": null,
+              "duration": 9073,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout_proces.CheckOutProcess();",
+              "err": {},
+              "uuid": "196d850f-c3b2-4b3f-9a9a-829f85410c6d",
+              "parentUUID": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7755213-0960-43e6-8ed6-d338664d512c",
+            "196d850f-c3b2-4b3f-9a9a-829f85410c6d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13685,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
