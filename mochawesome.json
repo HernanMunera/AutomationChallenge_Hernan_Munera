@@ -12,90 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-07-21T23:14:41.361Z",
-    "end": "2025-07-21T23:15:50.389Z",
-    "duration": 69028
+    "start": "2025-07-22T14:33:12.076Z",
+    "end": "2025-07-22T14:34:21.450Z",
+    "duration": 69374
   },
   "results": [
     {
-      "uuid": "b9ecdbd8-7e30-463d-9ba2-9dc7ce691df4",
-      "title": "",
-      "fullFile": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
-      "file": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
-          "title": "test the E2E test for the checkout process ",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Adding Product to the Shopping car",
-              "fullTitle": "test the E2E test for the checkout process  Adding Product to the Shopping car",
-              "timedOut": null,
-              "duration": 4612,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "checkout_proces.addingfProductToShoppingCar();",
-              "err": {},
-              "uuid": "a7755213-0960-43e6-8ed6-d338664d512c",
-              "parentUUID": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Checkout process after adding itme to the shopping car",
-              "fullTitle": "test the E2E test for the checkout process  Checkout process after adding itme to the shopping car",
-              "timedOut": null,
-              "duration": 9073,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "checkout_proces.CheckOutProcess();",
-              "err": {},
-              "uuid": "196d850f-c3b2-4b3f-9a9a-829f85410c6d",
-              "parentUUID": "ac4467a5-6bed-4d8e-884c-5c9ba39f6e29",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "a7755213-0960-43e6-8ed6-d338664d512c",
-            "196d850f-c3b2-4b3f-9a9a-829f85410c6d"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 13685,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "4cbcc536-1b76-420c-bbaa-ac61e6f6aaee",
+      "uuid": "49b06304-b465-49f9-8069-349ae6aee319",
       "title": "",
       "fullFile": "cypress/e2e/login_suite/LogIn.js",
       "file": "cypress/e2e/login_suite/LogIn.js",
@@ -104,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+          "uuid": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
           "title": "test the Login Page for Laboratorio0del testing page ",
           "fullFile": "",
           "file": "",
@@ -115,7 +38,7 @@
               "title": "Login successfully",
               "fullTitle": "test the Login Page for Laboratorio0del testing page  Login successfully",
               "timedOut": null,
-              "duration": 4073,
+              "duration": 4298,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -124,8 +47,8 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('[href=\"/my-account\"]').should('have.text', 'Mi Cuenta')",
               "err": {},
-              "uuid": "c18d877b-ae0f-4988-9b82-f1bfcde5b3ff",
-              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "uuid": "3d96a99d-df2e-4668-909c-e6c406faf56e",
+              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
               "isHook": false,
               "skipped": false
             },
@@ -133,7 +56,7 @@
               "title": "Login unsuccessfully with wrong email",
               "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong email",
               "timedOut": null,
-              "duration": 1999,
+              "duration": 1955,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -142,8 +65,8 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('whuge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
               "err": {},
-              "uuid": "620eb38c-31ea-4e4f-a4f3-8a46b78a1cb7",
-              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "uuid": "958bde73-4fd2-4527-8021-2c690d4d6810",
+              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
               "isHook": false,
               "skipped": false
             },
@@ -151,7 +74,7 @@
               "title": "Login unsuccessfully with wrong password",
               "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong password",
               "timedOut": null,
-              "duration": 2109,
+              "duration": 2196,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -160,8 +83,8 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\n        cy.get('input[name=\"password\"]').type('Monday12.1');\n        cy.get('[data-at=\"submit-login\"]').click();\n        cy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
               "err": {},
-              "uuid": "ab9c6260-3321-482b-a10c-442dfa4e4b42",
-              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "uuid": "34de18b4-5ebc-4f3e-b73a-b88bbbf5d40b",
+              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
               "isHook": false,
               "skipped": false
             },
@@ -169,7 +92,7 @@
               "title": "Login unsuccessfully by bug with unable button",
               "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully by bug with unable button",
               "timedOut": null,
-              "duration": 6375,
+              "duration": 6421,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -179,27 +102,27 @@
               "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('input[name=\"email\"]').clear().type('whuge2.test@gmail.com');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('[href=\"/my-account\"]').should('have.text', 'Mi Cuenta')",
               "err": {
                 "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.isNotDisabled (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:148344:58)\n    at runAllChecks (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114722:26)\n    at retryActionability (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114811:16)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147205:68)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147146:14)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Object.proxyGetter [as get] (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:80297:22)\n    at exists (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146387:26)\n    at elExists (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146402:10)\n    at ensureExistence (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146583:22)\n    at onFailFn (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:146612:53)",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.isNotDisabled (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:148344:58)\n    at runAllChecks (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114722:26)\n    at retryActionability (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114811:16)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147205:68)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147146:14)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:5420:46)",
                 "diff": null
               },
-              "uuid": "24ad5097-2b1e-4d38-889a-3a4aa89492e2",
-              "parentUUID": "7339dfc9-8e1f-4a10-bba9-5e51dd32a990",
+              "uuid": "dad8505e-8863-4d1c-afba-5c1e4e786727",
+              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c18d877b-ae0f-4988-9b82-f1bfcde5b3ff",
-            "620eb38c-31ea-4e4f-a4f3-8a46b78a1cb7",
-            "ab9c6260-3321-482b-a10c-442dfa4e4b42"
+            "3d96a99d-df2e-4668-909c-e6c406faf56e",
+            "958bde73-4fd2-4527-8021-2c690d4d6810",
+            "34de18b4-5ebc-4f3e-b73a-b88bbbf5d40b"
           ],
           "failures": [
-            "24ad5097-2b1e-4d38-889a-3a4aa89492e2"
+            "dad8505e-8863-4d1c-afba-5c1e4e786727"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 14556,
+          "duration": 14870,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -215,7 +138,84 @@
       "_timeout": 2000
     },
     {
-      "uuid": "d90e2da1-d0dc-4767-88ce-ecf6fca6af05",
+      "uuid": "0a337f96-12c3-47df-a09c-cc57779eedf3",
+      "title": "",
+      "fullFile": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
+      "file": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+          "title": "test the E2E test for the checkout process ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adding Product to the Shopping car",
+              "fullTitle": "test the E2E test for the checkout process  Adding Product to the Shopping car",
+              "timedOut": null,
+              "duration": 4345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout_proces.addingfProductToShoppingCar();",
+              "err": {},
+              "uuid": "12587061-507c-412f-8bc0-e0727d7d9c2f",
+              "parentUUID": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout process after adding itme to the shopping car",
+              "fullTitle": "test the E2E test for the checkout process  Checkout process after adding itme to the shopping car",
+              "timedOut": null,
+              "duration": 9384,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout_proces.CheckOutProcess();",
+              "err": {},
+              "uuid": "94b0d052-8789-4c45-b56c-bef8a6bfed19",
+              "parentUUID": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "12587061-507c-412f-8bc0-e0727d7d9c2f",
+            "94b0d052-8789-4c45-b56c-bef8a6bfed19"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13729,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4dae3179-340e-42c0-a7d8-f8ba6dbceda3",
       "title": "",
       "fullFile": "cypress/e2e/User_registration_suite/user_registration_test.js",
       "file": "cypress/e2e/User_registration_suite/user_registration_test.js",
@@ -224,7 +224,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "64508f67-c633-4707-82c3-c1642fd35a79",
+          "uuid": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
           "title": "test the register a new user ",
           "fullFile": "",
           "file": "",
@@ -235,7 +235,7 @@
               "title": "Succesfull user registration",
               "fullTitle": "test the register a new user  Succesfull user registration",
               "timedOut": null,
-              "duration": 5736,
+              "duration": 5816,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -244,8 +244,8 @@
               "context": null,
               "code": "user_regsitration.user_succesfull_registration();",
               "err": {},
-              "uuid": "77c05295-0985-40a0-be98-e3d618ce6dfb",
-              "parentUUID": "64508f67-c633-4707-82c3-c1642fd35a79",
+              "uuid": "387bc8bf-5fc7-4d7c-94d4-7abed4fd5a1e",
+              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
               "isHook": false,
               "skipped": false
             },
@@ -253,7 +253,7 @@
               "title": "Unsuccesfull user registration wthout email, no meesage validation",
               "fullTitle": "test the register a new user  Unsuccesfull user registration wthout email, no meesage validation",
               "timedOut": null,
-              "duration": 6173,
+              "duration": 6199,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -266,8 +266,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#swal2-title`, but never found it.\n    at User_registration.user_unsuccesfull_registration_no_email (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:26:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:21:0)",
                 "diff": null
               },
-              "uuid": "e719f1b3-8bec-4dd2-ac99-b564258d19d8",
-              "parentUUID": "64508f67-c633-4707-82c3-c1642fd35a79",
+              "uuid": "0e239563-67f2-488f-9667-c640060b0085",
+              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
               "isHook": false,
               "skipped": false
             },
@@ -275,7 +275,7 @@
               "title": "Unsuccesfull user registration without name, allows regsitration",
               "fullTitle": "test the register a new user  Unsuccesfull user registration without name, allows regsitration",
               "timedOut": null,
-              "duration": 6338,
+              "duration": 6317,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -288,8 +288,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div#swal2-html-container.swal2-html-container>' to have text 'name should not be empty', but the text was 'Tu usuario ha sido creado correctamente. Sigue las indicaciones de tu instructor para poder activar tu cuenta.'\n    at User_registration.user_unsuccesfull_registration_No_Name (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:40:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:24:0)",
                 "diff": "- 'Tu usuario ha sido creado correctamente. Sigue las indicaciones de tu instructor para poder activar tu cuenta.'\n+ 'name should not be empty'\n"
               },
-              "uuid": "79316c70-eef0-41fe-9c6d-86c75d55b633",
-              "parentUUID": "64508f67-c633-4707-82c3-c1642fd35a79",
+              "uuid": "0e83a7de-e852-4671-a6ed-561f4ab72c2f",
+              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
               "isHook": false,
               "skipped": false
             },
@@ -297,7 +297,7 @@
               "title": "Unsuccesfull user registration without Password",
               "fullTitle": "test the register a new user  Unsuccesfull user registration without Password",
               "timedOut": null,
-              "duration": 6408,
+              "duration": 6260,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -310,8 +310,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.bg-primaryColor.text-white.p-3.rounded-lg.w-full.primary-cta-hover.transition-all.duration-200.mb-5.font-bold.disabled:opacity-25>' to be 'disabled'\n    at User_registration.user_unsuccesfull_registration_No_Password (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:52:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:27:0)",
                 "diff": null
               },
-              "uuid": "d558cfee-4cee-4574-ba1e-61ebcf8e1690",
-              "parentUUID": "64508f67-c633-4707-82c3-c1642fd35a79",
+              "uuid": "c2e5396f-8fd5-422b-ae0f-74754fed45ce",
+              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
               "isHook": false,
               "skipped": false
             },
@@ -319,7 +319,7 @@
               "title": "Unsuccesfull user registration without Confirm Password",
               "fullTitle": "test the register a new user  Unsuccesfull user registration without Confirm Password",
               "timedOut": null,
-              "duration": 6265,
+              "duration": 6274,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -332,25 +332,25 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.bg-primaryColor.text-white.p-3.rounded-lg.w-full.primary-cta-hover.transition-all.duration-200.mb-5.font-bold.disabled:opacity-25>' to be 'disabled'\n    at User_registration.user_unsuccesfull_registration_N0_Confirm_Pass (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:66:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:30:0)",
                 "diff": null
               },
-              "uuid": "7b6bef67-cdbf-4b22-8380-336e4072ec79",
-              "parentUUID": "64508f67-c633-4707-82c3-c1642fd35a79",
+              "uuid": "f050ce6a-7110-4917-8e7b-fd6c70250f33",
+              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "77c05295-0985-40a0-be98-e3d618ce6dfb"
+            "387bc8bf-5fc7-4d7c-94d4-7abed4fd5a1e"
           ],
           "failures": [
-            "e719f1b3-8bec-4dd2-ac99-b564258d19d8",
-            "79316c70-eef0-41fe-9c6d-86c75d55b633",
-            "d558cfee-4cee-4574-ba1e-61ebcf8e1690",
-            "7b6bef67-cdbf-4b22-8380-336e4072ec79"
+            "0e239563-67f2-488f-9667-c640060b0085",
+            "0e83a7de-e852-4671-a6ed-561f4ab72c2f",
+            "c2e5396f-8fd5-422b-ae0f-74754fed45ce",
+            "f050ce6a-7110-4917-8e7b-fd6c70250f33"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 30920,
+          "duration": 30866,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

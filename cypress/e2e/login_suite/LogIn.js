@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("test the Login Page for Laboratorio0del testing page ", () => {
+describe("test the Login Page for Laboratorio del testing page ", () => {
 
     beforeEach(() => {
         cy.visit("https://www.laboratoriodetesting.com/")

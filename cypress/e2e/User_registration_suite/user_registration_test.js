@@ -3,7 +3,7 @@ import HomePage_access from "../../support/pageObjects/Homepage_access";
 import User_registration from "../../support/pageObjects/User_registration";
 /// <reference types="cypress" />
 
-describe("test the register a new user ", () => {
+describe("tests to the register a new user ", () => {
     const homepage_access = new HomePage_access();
     const user_regsitration = new User_registration;
 
