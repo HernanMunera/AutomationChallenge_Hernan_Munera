@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2025-07-22T14:33:47.373Z",
-    "end": "2025-07-22T14:34:03.985Z",
-    "duration": 16612,
+    "start": "2025-07-24T17:07:21.541Z",
+    "end": "2025-07-24T17:07:38.426Z",
+    "duration": 16885,
     "testsRegistered": 4,
     "passPercent": 75,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "49b06304-b465-49f9-8069-349ae6aee319",
+      "uuid": "53dbabb7-668f-48bc-bd9b-b30789d5447c",
       "title": "",
       "fullFile": "cypress/e2e/login_suite/LogIn.js",
       "file": "cypress/e2e/login_suite/LogIn.js",
@@ -27,8 +27,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
-          "title": "test the Login Page for Laboratorio0del testing page ",
+          "uuid": "3844bbad-7f9e-49cd-9d78-4724da528327",
+          "title": "test the Login Page for Laboratorio del testing page ",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,9 +36,9 @@
           "tests": [
             {
               "title": "Login successfully",
-              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login successfully",
+              "fullTitle": "test the Login Page for Laboratorio del testing page  Login successfully",
               "timedOut": null,
-              "duration": 4298,
+              "duration": 4322,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('[href=\"/my-account\"]').should('have.text', 'Mi Cuenta')",
               "err": {},
-              "uuid": "3d96a99d-df2e-4668-909c-e6c406faf56e",
-              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
+              "uuid": "6caf25aa-ae75-4c5f-883d-8e785412d550",
+              "parentUUID": "3844bbad-7f9e-49cd-9d78-4724da528327",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Login unsuccessfully with wrong email",
-              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong email",
+              "fullTitle": "test the Login Page for Laboratorio del testing page  Login unsuccessfully with wrong email",
               "timedOut": null,
-              "duration": 1955,
+              "duration": 2105,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,16 +65,16 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('whuge2.test@gmail.com');\ncy.get('input[name=\"password\"]').type('Monday12.');\ncy.get('[data-at=\"submit-login\"]').click();\ncy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
               "err": {},
-              "uuid": "958bde73-4fd2-4527-8021-2c690d4d6810",
-              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
+              "uuid": "10683832-0a9f-4070-8086-ec4cca50a0f4",
+              "parentUUID": "3844bbad-7f9e-49cd-9d78-4724da528327",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Login unsuccessfully with wrong password",
-              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully with wrong password",
+              "fullTitle": "test the Login Page for Laboratorio del testing page  Login unsuccessfully with wrong password",
               "timedOut": null,
-              "duration": 2196,
+              "duration": 2182,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,16 +83,16 @@
               "context": null,
               "code": "cy.get('input[name=\"email\"]').type('huge2.test@gmail.com');\n        cy.get('input[name=\"password\"]').type('Monday12.1');\n        cy.get('[data-at=\"submit-login\"]').click();\n        cy.get('#swal2-html-container').should('have.text', 'No pudimos iniciar sesión con estas credenciales. Intenta de nuevo.')",
               "err": {},
-              "uuid": "34de18b4-5ebc-4f3e-b73a-b88bbbf5d40b",
-              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
+              "uuid": "4fe3ded8-eb5c-448b-b97e-e9d4488e8a77",
+              "parentUUID": "3844bbad-7f9e-49cd-9d78-4724da528327",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Login unsuccessfully by bug with unable button",
-              "fullTitle": "test the Login Page for Laboratorio0del testing page  Login unsuccessfully by bug with unable button",
+              "fullTitle": "test the Login Page for Laboratorio del testing page  Login unsuccessfully by bug with unable button",
               "timedOut": null,
-              "duration": 6421,
+              "duration": 6489,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -105,24 +105,24 @@
                 "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:\n\n`<button data-at=\"submit-login\" class=\"bg-primaryColor text-white p-3 rounded-lg w-full primary-cta-hover transition-all duration-200 mb-5 font-bold disabled:opacity-25\" disabled=\"\">Iniciar...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at Object.isNotDisabled (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:148344:58)\n    at runAllChecks (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114722:26)\n    at retryActionability (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:114811:16)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147205:68)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:147146:14)\n    at tryCatcher (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://www.laboratoriodetesting.com/__cypress/runner/cypress_runner.js:5420:46)",
                 "diff": null
               },
-              "uuid": "dad8505e-8863-4d1c-afba-5c1e4e786727",
-              "parentUUID": "1bd2e6ff-3f58-43d9-b03d-3e51c41e6baf",
+              "uuid": "1c2fe98e-acc9-4ae3-8c8c-7d27a2483b96",
+              "parentUUID": "3844bbad-7f9e-49cd-9d78-4724da528327",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3d96a99d-df2e-4668-909c-e6c406faf56e",
-            "958bde73-4fd2-4527-8021-2c690d4d6810",
-            "34de18b4-5ebc-4f3e-b73a-b88bbbf5d40b"
+            "6caf25aa-ae75-4c5f-883d-8e785412d550",
+            "10683832-0a9f-4070-8086-ec4cca50a0f4",
+            "4fe3ded8-eb5c-448b-b97e-e9d4488e8a77"
           ],
           "failures": [
-            "dad8505e-8863-4d1c-afba-5c1e4e786727"
+            "1c2fe98e-acc9-4ae3-8c8c-7d27a2483b96"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 14870,
+          "duration": 15098,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

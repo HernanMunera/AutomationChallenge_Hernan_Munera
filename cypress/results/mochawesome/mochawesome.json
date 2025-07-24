@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 4,
-    "start": "2025-07-22T14:33:12.076Z",
-    "end": "2025-07-22T14:33:45.381Z",
-    "duration": 33305,
+    "start": "2025-07-24T17:06:46.241Z",
+    "end": "2025-07-24T17:07:19.598Z",
+    "duration": 33357,
     "testsRegistered": 5,
     "passPercent": 20,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4dae3179-340e-42c0-a7d8-f8ba6dbceda3",
+      "uuid": "731d99e7-21ad-430d-90ca-02c58d5cb4d2",
       "title": "",
       "fullFile": "cypress/e2e/User_registration_suite/user_registration_test.js",
       "file": "cypress/e2e/User_registration_suite/user_registration_test.js",
@@ -27,8 +27,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
-          "title": "test the register a new user ",
+          "uuid": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
+          "title": "tests to the register a new user ",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,9 +36,9 @@
           "tests": [
             {
               "title": "Succesfull user registration",
-              "fullTitle": "test the register a new user  Succesfull user registration",
+              "fullTitle": "tests to the register a new user  Succesfull user registration",
               "timedOut": null,
-              "duration": 5816,
+              "duration": 5807,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "user_regsitration.user_succesfull_registration();",
               "err": {},
-              "uuid": "387bc8bf-5fc7-4d7c-94d4-7abed4fd5a1e",
-              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
+              "uuid": "3354c50e-ed3a-45e7-858c-b673d6a2123f",
+              "parentUUID": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Unsuccesfull user registration wthout email, no meesage validation",
-              "fullTitle": "test the register a new user  Unsuccesfull user registration wthout email, no meesage validation",
+              "fullTitle": "tests to the register a new user  Unsuccesfull user registration wthout email, no meesage validation",
               "timedOut": null,
-              "duration": 6199,
+              "duration": 6180,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,16 +69,16 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#swal2-title`, but never found it.\n    at User_registration.user_unsuccesfull_registration_no_email (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:26:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:21:0)",
                 "diff": null
               },
-              "uuid": "0e239563-67f2-488f-9667-c640060b0085",
-              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
+              "uuid": "0b8c55be-41e3-4060-acac-008f8cb51177",
+              "parentUUID": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Unsuccesfull user registration without name, allows regsitration",
-              "fullTitle": "test the register a new user  Unsuccesfull user registration without name, allows regsitration",
+              "fullTitle": "tests to the register a new user  Unsuccesfull user registration without name, allows regsitration",
               "timedOut": null,
-              "duration": 6317,
+              "duration": 6296,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -91,16 +91,16 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div#swal2-html-container.swal2-html-container>' to have text 'name should not be empty', but the text was 'Tu usuario ha sido creado correctamente. Sigue las indicaciones de tu instructor para poder activar tu cuenta.'\n    at User_registration.user_unsuccesfull_registration_No_Name (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:40:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:24:0)",
                 "diff": "- 'Tu usuario ha sido creado correctamente. Sigue las indicaciones de tu instructor para poder activar tu cuenta.'\n+ 'name should not be empty'\n"
               },
-              "uuid": "0e83a7de-e852-4671-a6ed-561f4ab72c2f",
-              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
+              "uuid": "8e1bacf1-e84b-43c8-bb4d-265ada72afc4",
+              "parentUUID": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Unsuccesfull user registration without Password",
-              "fullTitle": "test the register a new user  Unsuccesfull user registration without Password",
+              "fullTitle": "tests to the register a new user  Unsuccesfull user registration without Password",
               "timedOut": null,
-              "duration": 6260,
+              "duration": 6294,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -113,16 +113,16 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.bg-primaryColor.text-white.p-3.rounded-lg.w-full.primary-cta-hover.transition-all.duration-200.mb-5.font-bold.disabled:opacity-25>' to be 'disabled'\n    at User_registration.user_unsuccesfull_registration_No_Password (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:52:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:27:0)",
                 "diff": null
               },
-              "uuid": "c2e5396f-8fd5-422b-ae0f-74754fed45ce",
-              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
+              "uuid": "f35c3028-fb42-4fbd-a61b-5b1480e05366",
+              "parentUUID": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Unsuccesfull user registration without Confirm Password",
-              "fullTitle": "test the register a new user  Unsuccesfull user registration without Confirm Password",
+              "fullTitle": "tests to the register a new user  Unsuccesfull user registration without Confirm Password",
               "timedOut": null,
-              "duration": 6274,
+              "duration": 6604,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -135,25 +135,25 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.bg-primaryColor.text-white.p-3.rounded-lg.w-full.primary-cta-hover.transition-all.duration-200.mb-5.font-bold.disabled:opacity-25>' to be 'disabled'\n    at User_registration.user_unsuccesfull_registration_N0_Confirm_Pass (webpack://qa_automation_test_challenge_hernan_munera/./cypress/support/pageObjects/User_registration.js:66:0)\n    at Context.eval (webpack://qa_automation_test_challenge_hernan_munera/./cypress/e2e/User_registration_suite/user_registration_test.js:30:0)",
                 "diff": null
               },
-              "uuid": "f050ce6a-7110-4917-8e7b-fd6c70250f33",
-              "parentUUID": "09406528-6bde-4ec6-bf6e-dc6c68531ffd",
+              "uuid": "cd488af5-f88d-4f79-a11d-6e703529f159",
+              "parentUUID": "4c017c3f-9566-4c9b-84ba-8768d2abb8ba",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "387bc8bf-5fc7-4d7c-94d4-7abed4fd5a1e"
+            "3354c50e-ed3a-45e7-858c-b673d6a2123f"
           ],
           "failures": [
-            "0e239563-67f2-488f-9667-c640060b0085",
-            "0e83a7de-e852-4671-a6ed-561f4ab72c2f",
-            "c2e5396f-8fd5-422b-ae0f-74754fed45ce",
-            "f050ce6a-7110-4917-8e7b-fd6c70250f33"
+            "0b8c55be-41e3-4060-acac-008f8cb51177",
+            "8e1bacf1-e84b-43c8-bb4d-265ada72afc4",
+            "f35c3028-fb42-4fbd-a61b-5b1480e05366",
+            "cd488af5-f88d-4f79-a11d-6e703529f159"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 30866,
+          "duration": 31181,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

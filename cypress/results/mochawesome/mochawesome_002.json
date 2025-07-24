@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-07-22T14:34:05.910Z",
-    "end": "2025-07-22T14:34:21.450Z",
-    "duration": 15540,
+    "start": "2025-07-24T17:07:40.382Z",
+    "end": "2025-07-24T17:07:56.083Z",
+    "duration": 15701,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0a337f96-12c3-47df-a09c-cc57779eedf3",
+      "uuid": "8f5e0412-e8ae-4c47-a2ed-0d8a5c5f93a3",
       "title": "",
       "fullFile": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
       "file": "cypress/e2e/product_purchase_suite/checkout_scenario.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+          "uuid": "d23956a4-7f72-43d6-bbac-5628ae300042",
           "title": "test the E2E test for the checkout process ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Adding Product to the Shopping car",
               "fullTitle": "test the E2E test for the checkout process  Adding Product to the Shopping car",
               "timedOut": null,
-              "duration": 4345,
+              "duration": 4370,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "checkout_proces.addingfProductToShoppingCar();",
               "err": {},
-              "uuid": "12587061-507c-412f-8bc0-e0727d7d9c2f",
-              "parentUUID": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+              "uuid": "b21fd0d9-f76d-40a7-bde8-6a014bd651e7",
+              "parentUUID": "d23956a4-7f72-43d6-bbac-5628ae300042",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Checkout process after adding itme to the shopping car",
               "fullTitle": "test the E2E test for the checkout process  Checkout process after adding itme to the shopping car",
               "timedOut": null,
-              "duration": 9384,
+              "duration": 9489,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "checkout_proces.CheckOutProcess();",
               "err": {},
-              "uuid": "94b0d052-8789-4c45-b56c-bef8a6bfed19",
-              "parentUUID": "c7b84c7e-c916-4ea4-8e0e-0d86c2e49081",
+              "uuid": "c7e9b391-2357-406d-959f-e7387451bc9a",
+              "parentUUID": "d23956a4-7f72-43d6-bbac-5628ae300042",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "12587061-507c-412f-8bc0-e0727d7d9c2f",
-            "94b0d052-8789-4c45-b56c-bef8a6bfed19"
+            "b21fd0d9-f76d-40a7-bde8-6a014bd651e7",
+            "c7e9b391-2357-406d-959f-e7387451bc9a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13729,
+          "duration": 13859,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
